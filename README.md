@@ -89,12 +89,7 @@ A user-friendly platform enabling buyers and sellers to auction or purchase anti
 
 ### **Step 1: Clone the Repository**
 
-```bash
-git clone https://github.com/KashifKhn/easybid_java_spring
-cd easybid_java_spring
-```
 
----
 
 ### **Step 4: Build and Run Backend**
 
