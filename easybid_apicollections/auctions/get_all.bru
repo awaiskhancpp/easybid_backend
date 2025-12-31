@@ -1,0 +1,18 @@
+meta {
+  name: get_all
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8080/api/v1/auctions?buyerId=e6e19132-6bb8-4b40-82c2-930fea50ae13&winner=true
+  body: none
+  auth: none
+}
+
+params:query {
+  buyerId: e6e19132-6bb8-4b40-82c2-930fea50ae13
+  winner: true
+  ~itemId: fb8e8d76-62bb-448c-814f-4b06534181d8
+  ~userId: 
+}

@@ -1,0 +1,18 @@
+meta {
+  name: placebid
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/api/v1/bids
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "auctionId": "1818811d-0c26-4998-a1d8-36cead064b4f",
+    "userId": "522613bf-1f8f-4fb6-9026-c8c49257f808"
+  }
+}

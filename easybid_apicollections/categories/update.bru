@@ -1,0 +1,24 @@
+meta {
+  name: update
+  type: http
+  seq: 5
+}
+
+patch {
+  url: http://localhost:8080/api/v1/categories/:id
+  body: json
+  auth: none
+}
+
+params:path {
+  id: 8375d6fe-4e4a-4880-a5a7-3fbebe648e0f
+}
+
+body:json {
+  {
+    "name": "Art",
+    "description": "john.doe2@example.com",
+    "isActive": false
+  }
+  
+}

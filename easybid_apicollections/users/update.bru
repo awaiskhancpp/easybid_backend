@@ -1,0 +1,26 @@
+meta {
+  name: update
+  type: http
+  seq: 5
+}
+
+patch {
+  url: http://localhost:8080/api/v1/users/:id
+  body: json
+  auth: none
+}
+
+params:path {
+  id: b0fd2144-f802-463d-bea2-6af51cfe5133
+}
+
+body:json {
+  {
+      "name": "Ali Ahmed",
+      "email": "ali@gmail.com",
+      "address": "this address",
+      "phoneNumber": "+93211231",
+      "role": "SELLER",
+      "bio": "htis is bio"
+    }
+}

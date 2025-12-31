@@ -1,0 +1,19 @@
+meta {
+  name: create
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/api/v1/categories
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Antiques",
+    "description": "A Antiques is a Antiques that is at least 20–30 years old, and is known for its quality, classic design, and historical significance."
+  }
+  
+}

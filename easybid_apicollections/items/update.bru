@@ -1,0 +1,33 @@
+meta {
+  name: update
+  type: http
+  seq: 5
+}
+
+patch {
+  url: http://localhost:8080/api/v1/items/:id
+  body: multipartForm
+  auth: none
+}
+
+params:path {
+  id: f9f8e744-379f-4e1e-ae97-9c3bceaa8505
+}
+
+body:json {
+  {
+    "name": "John Doe",
+    "description": "john.doe2@example.com"
+  }
+  
+}
+
+body:multipart-form {
+  name: Example Item Name
+  description: Example item Description
+  startingBid: 11.5
+  buyNowPrice: 1981.5
+  files: @file(/home/zarqan-khn/mycoding/webdev/portfolio/portfolio_website/public/images/profile.jpg)
+  ~user: 8ba5a43b-d3a0-4cc6-8fca-3d743f8b518e
+  ~category: 827ff87f-538a-453f-aaa9-d05113841a67
+}

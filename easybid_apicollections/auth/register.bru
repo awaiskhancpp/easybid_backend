@@ -1,0 +1,23 @@
+meta {
+  name: register
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/api/v1/auth/register
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Admin",
+    "email": "admin@admin.com",
+    "password": "Admin1234",
+    "address": "Sirsina Kabal Swat District, Khyber-Pakhtunkhwa",
+    "phoneNumber": "+923139116207",
+    "role": "ADMIN"
+  }
+  
+}
